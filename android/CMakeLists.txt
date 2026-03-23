@@ -23,3 +23,5 @@ add_library( mecab_dart
     ../ios/Classes/tagger.cpp
     ../ios/Classes/writer.cpp
 )
+
+target_link_options(mecab_dart PRIVATE "-Wl,-z,max-page-size=16384")
